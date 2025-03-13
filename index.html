@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Timesheet Filler</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        blockquote {
+            border-left: 4px solid #2c3e50;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Smart Timesheet Filler</h1>
+
+    <p>A Chrome extension that automatically fills in work hours on TriNet timesheets, saving time and reducing repetitive data entry.</p>
+
+    <img src="Extention.png" alt="Extension Icon">
+
+    <h2>Features</h2>
+    <ul>
+        <li>Quick input of work hours through a simple popup interface</li>
+        <li>Automatically fills all timesheet fields with the specified hours</li>
+        <li>Works specifically with TriNet's timesheet system</li>
+        <li>Clean and user-friendly interface</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <ol>
+        <li>Visit the <a href="https://chrome.google.com/webstore/detail/smart-timesheet-filler/your-extension-id">Chrome Web Store</a></li>
+        <li>Click "Add to Chrome"</li>
+        <li>Click "Add Extension" in the popup to confirm installation</li>
+    </ol>
+
+    <h2>Usage Guide</h2>
+
+    <h3>1. Opening the Extension</h3>
+    <p>Click the extension icon in your Chrome toolbar while on the TriNet timesheet page.</p>
+    <img src="Open-extention.png" alt="Opening the Extension">
+
+    <h3>2. Entering Work Hours</h3>
+    <p>In the popup interface:</p>
+    <ul>
+        <li>Input start time and end time for each day</li>
+        <li>Lunch time input is optional - if you take a lunch break, only enter the start time (e.g., 12:00 PM)
+            <ul>
+                <li>The lunch duration is automatically calculated as 30 minutes</li>
+                <li>Leave it blank if you don't take a lunch break</li>
+            </ul>
+        </li>
+        <li>Leave the input blank if you don't work on that day</li>
+        <li>Ensure that the times are entered in the correct format (e.g., 9:00 AM, 12:30 PM, 5:00 PM)</li>
+    </ul>
+    <img src="Fill-hours.png" alt="Filling Hours">
+
+    <h3>3. Managing Hours</h3>
+    <ul>
+        <li>Click the "Save" button to save your hours</li>
+        <li>Click the "Reset" button to clear all your input</li>
+    </ul>
+
+    <h3>4. Submitting Hours</h3>
+    <p>Click the "Submit Hours" button to automatically fill in all timesheet fields.</p>
+
+    <h3>5. Confirming Submission</h3>
+    <p>After clicking "Submit Hours," a confirmation popup will appear with an "OK" button. You need to keep clicking "OK" continuously until all hours are filled.</p>
+    <div class="warning">
+        <strong>Warning:</strong> Do not spam click the OK button. Wait for each input to be filled before clicking OK again to ensure all hours are properly recorded.
+    </div>
+    <img src="Click-ok.png" alt="Clicking OK">
+
+    <h3>6. Verifying and Managing Entries</h3>
+    <p>After all hours are filled, you can verify the entries in the timesheet. If you need to delete an entry, use the delete button located on the right side of each entry.</p>
+    <img src="Filled-hours.png" alt="Filled Hours">
+
+    <div class="warning">
+        <strong>Important Notes:</strong>
+        <ul>
+            <li>This extension does not delete or overwrite existing input in TriNet</li>
+            <li>If you run the extension multiple times, it will add duplicate entries</li>
+            <li>You must manually delete any duplicate entries using the delete button</li>
+            <li>Always verify your entries before final submission</li>
+        </ul>
+    </div>
+
+    <h2>Version</h2>
+    <p>Current version: 1.0</p>
+
+    <h2>License</h2>
+    <p>This project is proprietary and not licensed for redistribution.</p>
+</body>
+</html> 
